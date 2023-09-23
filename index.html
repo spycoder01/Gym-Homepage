@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('imgb.jpg');
+        height: auto;
+    }
+
+    .left {
+        position: absolute;
+        left: 30px;
+        display: inline-block;
+        top: 30px;
+        /* border: 2px solid grey; */
+        width: 100px;
+        color: rgb(17, 156, 169);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert(95);
+    }
+
+    .left div {
+        text-align: center;
+        /* cursor: pointer; */
+    }
+
+    .left:hover {
+        text-decoration: none;
+        color: #f36100;
+    }
+
+    .mid {
+        display: block;
+        width: 700px;
+        margin: 20px auto;
+        border-radius: 10px;
+        border: 1px solid white;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 35px;
+        display: inline-block;
+        top: 20px;
+        color: white;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: none;
+        color: #f36100;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: rgb(37, 24, 49);
+        color: white;
+        padding: 4px 14px;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: #f36100;
+    }
+
+    .container {
+        border: 1px solid white;
+        margin: 136px 900px;
+        padding: 40px;
+        width: 22%;
+        border-radius: 15px;
+        color: white;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 280px;
+        padding: 11px;
+        border: 2px solid white;
+        border-radius: 15px;
+        margin: 14px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img1.jpg" alt="">
+            <div>my Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym</h1>
+        <form action="no action.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your mobile no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
